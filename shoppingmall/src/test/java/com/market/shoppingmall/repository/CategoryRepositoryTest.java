@@ -37,12 +37,12 @@ public class CategoryRepositoryTest extends ShoppingmallApplicationTests {
 
     @Test
     public void read(){
+
         //Optional<Category> category = categoryRepository.findById(1L);
 
         String type = "COMPUTER";
         Optional<Category> category = categoryRepository.findByType(type);
         category.ifPresent( item -> {
-
             Assert.assertEquals(item.getType(), type);
             System.out.println("item : " + item.getId());
             System.out.println("item : " + item.getType());

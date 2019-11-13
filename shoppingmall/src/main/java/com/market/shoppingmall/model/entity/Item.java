@@ -25,10 +25,11 @@ public class Item {
     private Integer price;
     private String brandName;
     private LocalDateTime registeredAt;
-    private LocalDateTime unregisterdAt;
+    private LocalDateTime unregisteredAt;
     private LocalDateTime createdAt;
     private String createdBy;
     private LocalDateTime updatedAt;
     private String updatedBy;
     private LocalDateTime deletedAt;
+    private Long partnerId;
 }
