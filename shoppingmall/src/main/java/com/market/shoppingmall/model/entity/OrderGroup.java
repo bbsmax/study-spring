@@ -26,11 +26,12 @@ public class OrderGroup {
     private String paymentType;
     private BigDecimal totalPrice;
     private Integer totalQuantity;
-    private LocalDateTime registeredAt;
-    private LocalDateTime unregisterdAt;
+    private LocalDateTime orderAt;
+    private LocalDateTime arrivalDate;
     private LocalDateTime createdAt;
     private String createdBy;
     private LocalDateTime updatedAt;
     private String updatedBy;
     private LocalDateTime deletedAt;
+    private Long userId;
 }

@@ -28,4 +28,6 @@ public class OrderDetail {
     private LocalDateTime updatedAt;
     private String updatedBy;
     private LocalDateTime deletedAt;
+    private Long itemId;
+    private Long orderGroupId;
 }
