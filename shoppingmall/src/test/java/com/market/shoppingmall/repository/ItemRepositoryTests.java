@@ -36,7 +36,7 @@ public class ItemRepositoryTests extends ShoppingmallApplicationTests {
         item.setCreatedAt(createdAt);
         item.setCreatedAt(createdAt);
         item.setRegisteredAt(registeredAt);
-        item.setPartnerId(partnerId);
+        //item.setPartnerId(partnerId);
         item.setCreatedBy(createdBy);
 
         Item newItem = itemRepository.save(item);

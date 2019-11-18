@@ -25,7 +25,6 @@ public class OrderDetailRepositoryTests extends ShoppingmallApplicationTests {
         LocalDateTime createdAt = LocalDateTime.now();
         String createdBy = "AdminUser";
         Long itemId = 1L;
-        Long orderGroupId = 1L;
 
         orderDetail.setStatus(status);
         orderDetail.setArrivalDate(arrival_date);
@@ -33,8 +32,7 @@ public class OrderDetailRepositoryTests extends ShoppingmallApplicationTests {
         orderDetail.setTotalPrice(totalPrice);
         orderDetail.setCreatedAt(createdAt);
         orderDetail.setCreatedBy(createdBy);
-        orderDetail.setItemId(itemId);
-        orderDetail.setOrderGroupId(orderGroupId);
+        //orderDetail.setItemId(itemId);
 
         OrderDetail newOderDetail = orderDetailRepository.save(orderDetail);
 

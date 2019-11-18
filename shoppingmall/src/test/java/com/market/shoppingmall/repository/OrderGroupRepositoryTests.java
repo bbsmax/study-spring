@@ -28,7 +28,8 @@ public class OrderGroupRepositoryTests extends ShoppingmallApplicationTests {
         orderGroup.setArrivalDate(LocalDateTime.now());
         orderGroup.setCreatedAt(LocalDateTime.now());
         orderGroup.setCreatedBy("ADMINServer");
-        orderGroup.setUserId(1L);
+        //orderGroup.setUserId(1L);
+        //orderGroup.setOrderDetailId(1L);
 
         OrderGroup newOrderGroup = orderGroupRepository.save(orderGroup);
         Assert.assertNotNull(newOrderGroup);
